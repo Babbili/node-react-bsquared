@@ -1,0 +1,134 @@
+.App, .intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 4rem;
+  padding: 1rem 0;
+}
+
+.App h1, .intro h1 {
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-bold);
+}
+.signin__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 1rem;
+  background-color: var(--container-color);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.button {
+  color: #fff;
+  font-family: var(--body-font);
+  font-weight: var(--font-bold);
+  border: 2px solid var(--first-color);
+  background-color: var(--container-color);
+  border-radius: 1.5rem;
+  padding: 0 1rem;
+  line-height: 40px;
+  cursor: pointer;
+  min-width: 140px;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+.button:hover {
+  border: 2px solid var(--first-color-active-link);
+  background-color: var(--first-color-active-link);
+}
+
+.ipinfo, .crypto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1.2rem;
+}
+.ipinfo h2, .crypto h2 {
+  font-size: var(--h2-font-size);
+}
+.ipinfo__items {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  row-gap: 1rem;
+  background-color: var(--container-color);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.ipinfo__item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 1rem;
+}
+
+/* ==== Crypto ==== */
+.coin__search {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  /* border: .5px solid var(--text-color-light); */
+  border-radius: 1rem;
+  cursor: pointer;
+  width: 100%;
+}
+.coin__search input {
+  height: 1.8rem;
+  background:none;
+  border: none;
+  color: var(--title-color);
+  width: 100%;
+}
+.coin__search button {
+  border: none;
+  background-color: transparent;
+}
+.coin__search input::placeholder {
+  color: var(--input-color);
+}
+
+.coins {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 1rem;
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--container-color);
+  border-radius: 1rem;
+}
+
+.coin {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  row-gap: 1rem;
+  width: 100%;
+}
+.coin__icon {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: .5rem;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+.coin__icon img {
+  height: 25px;
+  width: auto;
+}
+.coin__icon p {
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+.coin__price {
+  overflow-x: hidden;
+  text-overflow: clip;
+}
